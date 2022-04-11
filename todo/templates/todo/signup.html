@@ -1,0 +1,43 @@
+
+
+
+
+      
+
+
+
+{% extends 'todo/base.html' %}
+
+
+{% block content%}
+<br>
+<br>
+<br>
+
+<div class="col-lg-5 shadow p-4 mx-auto my-auto" >
+
+
+<div class="alert alert-success"><h3>Create Account</h3></div>
+<div class="p-4">
+  <form method="post" action="signup">
+
+
+
+      {% csrf_token %}
+
+      {{form.as_p}}
+<hr>
+      <input type="submit" value="CreateAccount" class="btn-success m-2 p-2 btn-lg">
+
+    </form>
+</div>
+
+
+</div>
+
+{% endblock %}
+
+
+
+
+
